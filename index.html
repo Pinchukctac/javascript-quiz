@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./content/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Quiz</title>
+</head>
+<body>
+    <div class = "timeContainer">
+        <p id = "timer"></p>
+    </div> 
+    <div class = "container">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">      
+                <div id = "questionContainer" class = "hide">
+                    <div id = "question">Question</div>
+                        <div id = "answerButtons" class = "btnGrid">
+                            <button type="button" class="btn btn-primary">Answer 1</button>
+                            <button type="button" class="btn btn-primary">Answer 2</button>
+                            <button type="button" class="btn btn-primary">Answer 3</button>
+                            <button type="button" class="btn btn-primary">Answer 4</button>
+                        </div>
+                </div>
+                    <div class = "controls">
+                        <button type="button" class="btn btn-success" id = "startBtn">Start</button>
+                        <button type="button" class="btn btn-success hide" id = "nextBtn">Next</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./content/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(black.jpg);
+    background-size: auto; 
+}
+
+.container {
+    padding: 10;
+    margin: 10;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 800px;
+    max-width: 80%;
+    background-color: azure;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 10px #3498bd;
+}
+
+#timer{
+    box-shadow: 0 0 10px 10px #e90e0e;
+}
+
+.btnGrid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.btn.correct {
+    background-color: rgba(0, 255, 64, 0.678);
+    color: black;
+}
+
+.btn.wrong {
+    background-color: red;
+}
+
+#startBtn {
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+#nextBtn {
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+p {
+    background-color: white;
+    display: inline-flex;
+    position: relative;
+    font-size: 50px;
+    height: 70px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px
+}
