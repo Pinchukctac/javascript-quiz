@@ -143,6 +143,7 @@ function showQuestions(question) {
         }
         button.addEventListener("click", selectAnswer)
         answerButtonsEl.appendChild(button)
+        
     })
 }
 
@@ -155,6 +156,10 @@ function resetState() {
 function selectAnswer(e) {
     var selectedBtn = e.target
     var correct = selectedBtn.dataset.correct
+    if (!correct){
+        console.log("youre wrong")
+        time-=10;
+    }
     Array.from(answerButtonsEl.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
